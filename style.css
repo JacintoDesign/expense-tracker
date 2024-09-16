@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs-container {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+label, select, input, button {
+    flex: 1; /* Ensure all form elements take up available space */
+    margin: 0 5px; /* Add some spacing between elements */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Smartphone Vertical: Media Queries */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .inputs-container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
